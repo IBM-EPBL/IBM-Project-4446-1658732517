@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        li{
+            float: left;
+            margin: 10px;
+            color: white;
+        }
+        #nav{
+            background-color: rgb(0,0,0,0.5);
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+        }
+        #head{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #nav1{
+            background-color: rgb(255,255,255,0.5);
+            margin-top: 100px;
+        }
+        p{
+            font-size: 25px;
+            text-indent: 60px;
+            line-height: 2.0;
+        }
+        h1{
+            color: white;
+        }
+        ul{
+            position: absolute;
+            right: 5px;
+        }
+    </style>
+</head>
+<body style="display: flex;flex-direction: column;align-items: center;">
+    <div id="nav">
+        <h1>Machine Learning Based Vehicle Performance Analyzer</h1>
+        <ul style="list-style-type: none; float: right;">
+            <li style="float: left;"><a href="/">Home</a></li>
+            <li style="float: left;"><a href="/app">Recognition</a></li>
+            
+        </ul>
+    </div>
+ 
+    <div id="nav1">
+        <form action = "/predict" method = "POST"  style="text-align:center;">
+      
+        <span>Cylinders</span>
+        <br>
+        <input type = "text" name = "b"  required/>
+        <br>
+        <span>Displacement</span>
+        <br>
+        <input type = "text" name = "c"  required/>
+        <br>
+        <span>Horsepower</span>
+        <br>
+        <input type = "text" name = "d"  required/>
+        <br>
+        <span>Weight</span>
+        <br>
+        <input type = "text" name = "e"  required/>
+        <br>
+        <span>Acceleration</span>
+        <br>
+        <input type = "text" name = "f"  required/>
+        <br>
+        <span>Model year</span>
+        <br>
+        <input type = "text" name = "g"  required/>
+        <br>
+        <span>Origin</span>
+        <br>
+        <input type = "text" name = "a"  required/>
+        <br>
+        <br>
+        <input type = "submit" value="Recognition " style="background-color:blue;outline:none;border:none;color:white;cursor:pointer;"/>
+     </form>
+    </div>
+    
+</body>
+</html>
